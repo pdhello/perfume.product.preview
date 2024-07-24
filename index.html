@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Paige D Product preview card component</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="grid">
+ <!--   I  used <figure> but it does not work when I try to change from laptop mode to desktop mode-->
+<!--    <figure class="image">
+     <img src="/images/image-product-desktop.600x900.jpg" alt="a bottle of perfume" width="600" height="900">
+   </figure> -->
+   <picture class="image">
+    <!-- Mobile image -->
+    <source srcset="image-product-mobile.jpg" media="(max-width: 768px)">
+    <!-- Default desktop image -->
+    <img src="image-product-desktop.600x900.jpg" alt="a bottle of perfume">
+  </picture>
+    <div class="texts-on-the-right">
+     <div class="perfume">Perfume</div>
+     <div class="gabrielle">Gabrielle Essence Eau De Parfum</div>
+     <div class="a-floral">  A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</div>
+     <div class="current-price">$149.99</div>
+    <div class="old-price">
+      <p><del>$169</del></p>
+    </div>
+     <button class="add-to-cart">
+      <img src="icon-cart.svg" alt="Cart Icon"> Add to Cart</button>
+     
+   </div>
+  </div>
+</body>
+</html>
